@@ -36,9 +36,7 @@ clearBtn.addEventListener("click", () => {
 	operator = "";
 });
 
-deleteBtn.addEventListener("click", () => {
-	bottomHalf.textContent = bottomHalf.textContent.slice(0, -1);
-});
+deleteBtn.addEventListener("click", handleDelete);
 
 equalsBtn.addEventListener("click", () => {
 	if (currentNumber != "" && previousNumber != "") {
@@ -93,7 +91,7 @@ function handleDelete() {
 		}
 	}
 	if (currentNumber === "" && previousNumber !== "" && operator !== "") {
-		bottomHalf.textContent = "";
+		bottomHalf.textContent = previousNumber;
 	}
 }
 
