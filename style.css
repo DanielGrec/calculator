@@ -56,7 +56,7 @@ footer a {
 
 #screen {
 	padding: 10px 20px;
-	border: 2px solid gray;
+	border: 2px solid white;
 	border-radius: 5px;
 	text-align: right;
 	margin-bottom: 20px;
@@ -73,23 +73,44 @@ footer a {
 	font-size: 35px;
 }
 
+.add,
+.multiply,
+.subtract,
+.divide,
+.pointBtn,
+.equalsBtn {
+	background-color: orange;
+	border: 2px solid orange;
+	color: white;
+}
+
+.pointBtn {
+	font-weight: bold;
+}
+
 .add:hover {
 	background-color: aqua;
+	color: black;
 }
 .multiply:hover {
 	background-color: aqua;
+	color: black;
 }
 .subtract:hover {
 	background-color: aqua;
+	color: black;
 }
 .divide:hover {
 	background-color: aqua;
+	color: black;
 }
 .pointBtn:hover {
 	background-color: aqua;
+	color: black;
 }
 .equalsBtn:hover {
 	background-color: aqua;
+	color: black;
 }
 
 button {
@@ -97,8 +118,15 @@ button {
 	font-size: 20px;
 	border-radius: 5px;
 	border: 2px solid gray;
-	background-color: white;
+	background-color: gray;
 	cursor: pointer;
+}
+.num {
+	color: white;
+	background-color: rgb(92, 92, 92);
+}
+.num:hover {
+	color: black;
 }
 button:hover {
 	background-color: rgb(240, 240, 37);
@@ -108,13 +136,23 @@ button:hover {
 button:active {
 	transform: translateY(3px);
 }
+#clear {
+	background-color: orange;
+	border: 2px solid orange;
+}
+#delete {
+	background-color: orange;
+	border: 2px solid orange;
+}
 #clear:hover {
 	background-color: rgb(212, 0, 0);
 	border: 0;
+	color: white;
 }
 #delete:hover {
 	background-color: rgb(212, 0, 0);
 	border: 0;
+	color: white;
 }
 
 .span-2 {

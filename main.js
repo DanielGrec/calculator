@@ -91,7 +91,7 @@ function handleDelete() {
 		}
 	}
 	if (currentNumber === "" && previousNumber !== "" && operator !== "") {
-		bottomHalf.textContent = previousNumber;
+		bottomHalf.textContent = "";
 	}
 }
 
@@ -152,7 +152,7 @@ function operate() {
 }
 
 function roundNumber(num) {
-	return Math.round(num * 100000) / 100000;
+	return Math.round(num * 1000) / 1000;
 }
 
 function displayResults() {
