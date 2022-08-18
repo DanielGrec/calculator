@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Prompt", sans-serif;
+}
+
+body {
+	background-color: rgb(240, 240, 37);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+footer {
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+#gh-logo {
+	width: 35px;
+	height: 35px;
+	margin: 0 10px -9px 5px;
+}
+
+#calculator {
+	width: 400px;
+	height: 600px;
+	background-color: #ddd;
+	border: 2px solid gray;
+	border-radius: 10px;
+	box-shadow: 7px 7px black;
+	padding: 20px;
+}
+
+#buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+#screen {
+	padding: 10px 20px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	text-align: right;
+	margin-bottom: 20px;
+	background-color: white;
+	min-height: 128px;
+	cursor: text;
+}
+#topHalf {
+	min-height: 40px;
+	font-size: 20px;
+}
+#bottomHalf {
+	min-height: 60px;
+	font-size: 35px;
+}
+
+.add:hover {
+	background-color: aqua;
+}
+.multiply:hover {
+	background-color: aqua;
+}
+.subtract:hover {
+	background-color: aqua;
+}
+.divide:hover {
+	background-color: aqua;
+}
+.pointBtn:hover {
+	background-color: aqua;
+}
+.equalsBtn:hover {
+	background-color: aqua;
+}
+
+button {
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 2px solid gray;
+	background-color: white;
+	cursor: pointer;
+}
+button:hover {
+	background-color: rgb(240, 240, 37);
+	box-shadow: 3px 3px black;
+	border: 0;
+}
+button:active {
+	transform: translateY(3px);
+}
+#clear:hover {
+	background-color: rgb(212, 0, 0);
+	border: 0;
+}
+#delete:hover {
+	background-color: rgb(212, 0, 0);
+	border: 0;
+}
+
+.span-2 {
+	grid-column: span 2;
+}

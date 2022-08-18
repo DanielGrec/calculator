@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="main.js" defer></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="screen">
+					<div id="topHalf"></div>
+					<div id="bottomHalf"></div>
+				</div>
+				<div id="buttons">
+					<button class="span-2" id="clear">AC</button>
+					<button class="span-2" id="delete">C</button>
+
+					<button id="btn" data-number>7</button>
+					<button id="btn" data-number>8</button>
+					<button id="btn" data-number>9</button>
+					<button id="btn" data-operator class="divide">/</button>
+
+					<button id="btn" data-number>4</button>
+					<button id="btn" data-number>5</button>
+					<button id="btn" data-number>6</button>
+					<button id="btn" data-operator class="multiply">x</button>
+
+					<button id="btn" data-number>1</button>
+					<button id="btn" data-number>2</button>
+					<button id="btn" data-number>3</button>
+					<button id="btn" data-operator class="subtract">-</button>
+
+					<button id="btn" class="pointBtn">.</button>
+					<button id="btn" data-number>0</button>
+					<button id="btn" class="equalsBtn">=</button>
+					<button id="btn" data-operator class="add">+</button>
+				</div>
+			</div>
+		</div>
+		<footer>Made by: <a href=https://github.com/DanielGrec> <img id="gh-logo" src="github.png" alt="github logo"/>Daniel Grec</a></footer>
+	</body>
+</html>
